@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:layout_height="80dp">
+
+    <ImageView
+            android:id="@+id/imgBanner"
+            android:layout_width="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:layout_height="80dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgBanner"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/txtMovieName"
+                android:layout_width="wrap_content"
+                android:textSize="16sp"
+                android:layout_height="wrap_content"
+                android:text="test, ini nama film"/>
+
+        <TextView
+                android:id="@+id/txtRating"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6,0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
